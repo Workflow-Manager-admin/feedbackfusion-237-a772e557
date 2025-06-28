@@ -83,9 +83,6 @@ export default component$(() => {
         )}
       </div>
       <div style={{display: "flex", gap: 22, flexWrap: "wrap", justifyContent: "center"}}>
-        <a href="/match-resume" class="button">Resume Matcher</a>
-        <a href="/cover-letter" class="button">AI Cover Letter</a>
-        <a href="/feedback-analyzer" class="button">Feedback Analyzer</a>
         <a href="/dashboard" class="button button-dark">Admin Dashboard</a>
       </div>
       <div style={{ marginTop: 38, fontSize: "0.85rem", color: "#aaa" }}>
@@ -100,7 +97,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "User feedback system, resume matcher, AI cover letter, admin dashboard.",
+      content: "User feedback system and admin dashboard.",
     },
   ],
 };

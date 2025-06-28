@@ -3,13 +3,13 @@
 > vite --mode ssr --port 3000 --host 0.0.0.0
 
 
-  🚧 Please note that development mode is slower than production.
-
-  VITE v5.3.5  ready in 1933 ms
+  VITE v5.3.5  ready in 1605 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
-6:36:18 AM [vite] warning: Local images can be optimized by importing using ESM, like this:
+
+  🚧 Please note that development mode is slower than production.
+6:40:58 AM [vite] warning: Local images can be optimized by importing using ESM, like this:
 
   import ImgLogo from '~/media/logo.svg?jsx';
   <ImgLogo />
