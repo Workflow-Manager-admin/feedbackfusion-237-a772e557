@@ -1,5 +1,7 @@
 import { component$, useSignal, $ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import FeedbackBox from "../../components/FeedbackBox";
+import LoadingSpinner from "../../components/LoadingSpinner";
 
 /**
  * Feedback Analyzer Page - analyzes pasted feedback for sentiment/summary (mocked AI).
@@ -47,13 +49,13 @@ export default component$(() => {
         disabled={analyzing.value || !userFeedback.value}
         onClick$={analyze}
       >
-        {analyzing.value ? "Analyzing..." : "Analyze"}
+        {analyzing.value ? <><LoadingSpinner /> Analyzing...</> : "Analyze"}
       </button>
       {analysis.value && (
-        <div style={{ marginTop: 23, color: "#18b6f6", background: "#181C31", padding: 18, borderRadius: 10 }}>
-          <b>Sentiment:</b> {analysis.value.sentiment} <br />
-          <b>Summary:</b> {analysis.value.summary}
-        </div>
+        <FeedbackBox
+          sentiment={analysis.value.sentiment}
+          summary={analysis.value.summary}
+        />
       )}
     </div>
   );
