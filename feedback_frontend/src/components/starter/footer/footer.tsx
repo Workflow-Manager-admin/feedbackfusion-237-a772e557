@@ -7,12 +7,20 @@ export default component$(() => {
 
   return (
     <footer>
-      <div class="container">
-        <a href="https://www.builder.io/" target="_blank" class={styles.anchor}>
-          <span>Made with ♡ by Builder.io</span>
-          <span class={styles.spacer}>|</span>
-          <span>{serverTime.value.date}</span>
+      <div class="container" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <a href="/" class={styles.anchor} style={{ marginBottom: 10 }}>
+          <img
+            src="/logo.svg"
+            alt="FeedbackFusion Logo"
+            style={{ height: 32, width: "auto" }}
+            width={110}
+            height={32}
+            loading="lazy"
+          />
         </a>
+        <span style={{ color: "#aaa", fontSize: "0.85em", marginBottom: 4 }}>
+          &copy; {new Date().getFullYear()} FeedbackFusion | <span>{serverTime.value.date}</span>
+        </span>
       </div>
     </footer>
   );

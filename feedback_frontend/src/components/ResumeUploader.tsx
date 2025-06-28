@@ -18,6 +18,7 @@ export default component$<{
     <div style={{ marginBottom: 12 }}>
       <label style={{ fontWeight: 500 }}>
         Resume
+        <span style={{ marginLeft: 6 }}><img src="/upload-icon.svg" alt="Upload Icon" width={18} style={{verticalAlign: "middle"}} loading="lazy" /></span>
         <input
           type="file"
           accept=".pdf,.doc,.txt"

@@ -49,7 +49,17 @@ export default component$(() => {
         disabled={analyzing.value || !userFeedback.value}
         onClick$={analyze}
       >
-        {analyzing.value ? <><LoadingSpinner /> Analyzing...</> : "Analyze"}
+        {analyzing.value ? (
+          <>
+            <img src="/ai-icon.svg" alt="AI" width={18} style={{marginRight: 5, verticalAlign: "middle"}} loading="lazy" />
+            <LoadingSpinner /> Analyzing...
+          </>
+        ) : (
+          <>
+            <img src="/ai-icon.svg" alt="AI" width={18} style={{marginRight: 5, verticalAlign: "middle"}} loading="lazy" />
+            Analyze
+          </>
+        )}
       </button>
       {analysis.value && (
         <FeedbackBox

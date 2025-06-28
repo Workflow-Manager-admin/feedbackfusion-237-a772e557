@@ -76,7 +76,17 @@ export default component$(() => {
         disabled={loading.value}
         onClick$={matchResume}
       >
-        {loading.value ? <><LoadingSpinner /> Matching...</> : "Find Matches"}
+        {loading.value ? (
+          <>
+            <img src="/ai-icon.svg" alt="AI" width={16} style={{marginRight: 6, verticalAlign: "middle"}} loading="lazy" />
+            <LoadingSpinner /> Matching...
+          </>
+        ) : (
+          <>
+            <img src="/ai-icon.svg" alt="AI" width={16} style={{marginRight: 6, verticalAlign: "middle"}} loading="lazy" />
+            Find Matches
+          </>
+        )}
       </button>
       {result.value && (
         <div style={{ marginTop: 24, color: "#18b6f6" }}>

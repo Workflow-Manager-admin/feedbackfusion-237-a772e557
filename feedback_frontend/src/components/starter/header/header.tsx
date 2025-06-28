@@ -1,14 +1,21 @@
 import { component$ } from "@builder.io/qwik";
-import { QwikLogo } from "../icons/qwik";
 import styles from "./header.module.css";
 
+// Qwik provides Vite's public folder at root, so use "/logo.svg"
 export default component$(() => {
   return (
     <header class={styles.header}>
       <div class={["container", styles.wrapper]}>
         <div class={styles.logo}>
-          <a href="/" title="qwik">
-            <QwikLogo height={50} width={143} />
+          <a href="/" title="FeedbackFusion">
+            <img
+              src="/logo.svg"
+              style={{ height: 50, width: "auto", display: "block" }}
+              alt="FeedbackFusion Logo"
+              loading="eager"
+              width={143}
+              height={50}
+            />
           </a>
         </div>
         <ul>

@@ -64,7 +64,15 @@ ${name.value}`;
         <button class="button-dark"
                 disabled={loading.value}
                 onClick$={handleGenerate$}>
-          {loading.value ? "Generating..." : "Generate Letter"}
+          {loading.value ? (
+            <>
+              <img src="/ai-icon.svg" alt="AI" width={18} style={{marginRight: 6, verticalAlign: "middle"}} loading="lazy" /> Generating...
+            </>
+          ) : (
+            <>
+              <img src="/ai-icon.svg" alt="AI" width={18} style={{marginRight: 6, verticalAlign: "middle"}} loading="lazy" /> Generate Letter
+            </>
+          )}
         </button>
         {result.value && (
           <textarea
