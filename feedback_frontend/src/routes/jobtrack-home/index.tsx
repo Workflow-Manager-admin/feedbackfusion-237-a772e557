@@ -1,11 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./jobtrack-home.module.css";
 
-// PUBLIC_INTERFACE
+/*
+ * PUBLIC_INTERFACE
+ * JobTrack Home Page: JobTrack AI app hero, navigation, and footer.
+ * Shows only JobTrack AI branding and features. No FeedbackFusion logo/links.
+ */
 export default component$(() => {
   return (
     <div class={styles.wrapper}>
-      {/* Navbar */}
+      {/* Navbar: JobTrack AI only */}
       <nav class={styles.navbar}>
         <div class={styles.logo}>
           <span class={styles.logoIcon}>🛤️</span>
@@ -18,7 +22,7 @@ export default component$(() => {
           <li><a href="/dashboard" class={styles.dashboardBtn}>Dashboard</a></li>
         </ul>
       </nav>
-      {/* Hero Section */}
+      {/* Hero Section: JobTrack AI only, no extra doc/tutorial/example links */}
       <section class={styles.hero}>
         <div class={styles.heroContent}>
           <h1>
@@ -35,7 +39,7 @@ export default component$(() => {
         <div class={styles.heroArt} aria-hidden="true" />
       </section>
 
-      {/* Feature Grid */}
+      {/* Feature Grid: JobTrack AI relevant features */}
       <section class={styles.features} id="features">
         <h2 class={styles.featureTitle}>Key Features</h2>
         <div class={styles.grid}>
@@ -70,7 +74,7 @@ export default component$(() => {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer: JobTrack AI only */}
       <footer class={styles.footer} id="contact">
         <div>
           <span class={styles.logoMini}>🛤️ <span class={styles.logoAccent}>JobTrack AI</span></span>
