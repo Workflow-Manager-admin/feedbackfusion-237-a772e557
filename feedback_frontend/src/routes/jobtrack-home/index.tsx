@@ -31,10 +31,7 @@ export default component$(() => {
           <p class={styles.subtitle}>
             Accelerate your job search with AI-driven tracking, resumes, applications, and feedback. Stay organized, stay ahead!
           </p>
-          <div class={styles.ctaGroup}>
-            <a href="/match-resume" class={styles.ctaPrimary}>Try Resume Matcher</a>
-            <a href="/cover-letter" class={styles.ctaAlt}>Generate Cover Letter</a>
-          </div>
+          {/* (Removed Resume Matcher and Cover Letter ctas as per request) */}
         </div>
         <div class={styles.heroArt} aria-hidden="true" />
       </section>
