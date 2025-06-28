@@ -85,8 +85,9 @@ export default component$(() => {
       <div style={{display: "flex", gap: 22, flexWrap: "wrap", justifyContent: "center"}}>
         <a href="/dashboard" class="button button-dark">Admin Dashboard</a>
       </div>
+      {/* Footer for minimal copyright—brand neutral */}
       <div style={{ marginTop: 38, fontSize: "0.85rem", color: "#aaa" }}>
-        Powered by Qwik & Flask | &copy; {new Date().getFullYear()}
+        &copy; {new Date().getFullYear()} JobTrack AI
       </div>
     </div>
   );

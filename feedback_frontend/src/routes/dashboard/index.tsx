@@ -129,5 +129,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Dashboard | FeedbackFusion",
+  title: "Dashboard | JobTrack AI",
 };

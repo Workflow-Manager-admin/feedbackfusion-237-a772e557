@@ -76,11 +76,8 @@ export default component$(() => {
         <div>
           <span class={styles.logoMini}>🛤️ <span class={styles.logoAccent}>JobTrack AI</span></span>
           <span class={styles.copyright}>
-            &copy; {new Date().getFullYear()} JobTrackAI. All rights reserved.
+            &copy; {new Date().getFullYear()} JobTrack AI. All rights reserved.
           </span>
-        </div>
-        <div class={styles.madeby}>
-          <a href="https://qwik.dev" target="_blank" rel="noopener" class={styles.powered}>Powered by Qwik</a>
         </div>
       </footer>
     </div>
