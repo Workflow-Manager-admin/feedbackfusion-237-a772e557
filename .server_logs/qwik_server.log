@@ -4,7 +4,7 @@
 
 (!) Could not auto-determine entry point from rollupOptions or html files and there are no explicit optimizeDeps.include patterns. Skipping dependency pre-bundling.
 
-  VITE v5.3.5  ready in 1633 ms
+  VITE v5.3.5  ready in 1577 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
