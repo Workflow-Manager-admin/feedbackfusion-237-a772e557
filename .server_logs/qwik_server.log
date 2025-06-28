@@ -3,23 +3,9 @@
 > vite --mode ssr --port 3000 --host 0.0.0.0
 
 
-  VITE v5.3.5  ready in 1608 ms
+  VITE v5.3.5  ready in 1567 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
 
   🚧 Please note that development mode is slower than production.
-6:44:41 AM [vite] warning: Local images can be optimized by importing using ESM, like this:
-
-  import ImgLogo from '~/media/logo.svg?jsx';
-  <ImgLogo />
-
-See https://qwik.dev/docs/integrations/image-optimization/#responsive-images
-  Plugin: vite-plugin-qwik
-  File: /home/kavia/workspace/code-generation/feedbackfusion-237-a772e557/feedback_frontend/src/components/starter/footer/footer.tsx:13:13
-  11 |          <a href="/" class={styles.anchor} style={{ marginBottom: 10 }}>
-  12 |            <img
-  13 |              src="/logo.svg"
-     |               ^
-  14 |              alt="FeedbackFusion Logo"
-  15 |              style={{ height: 32, width: "auto" }}

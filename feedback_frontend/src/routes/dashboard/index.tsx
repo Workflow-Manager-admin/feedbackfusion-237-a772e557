@@ -27,7 +27,7 @@ export default component$(() => {
     try {
       const response = await fetch(
         // Adjust URL as needed for deployment
-        "http://localhost:3001/feedback"
+        "https://vscode-internal-226046-beta.beta01.cloud.kavia.ai:3001/feedback"
       );
       if (!response.ok) throw new Error("Failed to load data");
       const data = await response.json();
@@ -44,7 +44,7 @@ export default component$(() => {
     try {
       const response = await fetch(
         // Adjust URL as needed for deployment
-        "http://localhost:3001/feedback"
+        "https://vscode-internal-226046-beta.beta01.cloud.kavia.ai:3001/feedback"
       );
       if (!response.ok) throw new Error("Failed to load data");
       const data = await response.json();

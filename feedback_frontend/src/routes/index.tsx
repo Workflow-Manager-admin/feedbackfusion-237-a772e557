@@ -14,7 +14,7 @@ export default component$(() => {
     submitting.value = true;
     submitResult.value = null;
     try {
-      const res = await fetch("http://localhost:3001/submit", {
+      const res = await fetch("https://vscode-internal-226046-beta.beta01.cloud.kavia.ai:3001/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -6,7 +6,7 @@
  */
 
 // PUBLIC_INTERFACE
-const API_BASE_URL = "http://localhost:3001";
+const API_BASE_URL = "https://vscode-internal-226046-beta.beta01.cloud.kavia.ai:3001";
 
 // Helper to handle common fetch logic and error extraction
 async function fetchJson<T = any>(
